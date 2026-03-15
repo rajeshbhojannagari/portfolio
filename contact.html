@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #f4f4f4;
+        }
+        .nav-links{
+            display: flex;
+            gap: 25px;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: black;
+            font-weight: 50;
+        }
+        .nav-links a:hover{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <nav class="navbar">
         <h3>Portfolio</h3>
+        <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="skills.html">Skills</a>
         <a href="project.html">Projects</a>
@@ -15,6 +38,8 @@
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
+        </div>
+        </nav>
     </header>
     <div>
         <a href="https://www.linkedin.com/in/rajesh-bhojannagari-9a4779282/"><h4>Linkdin</h4></a>
