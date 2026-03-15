@@ -1,56 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-            background-color: burlywood;
-        }
-        .navbar{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            background-color: #df7b7b;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .nav-links{
-            display: flex;
-            gap: 25px;
-        }
-        .nav-links a{
-            text-decoration: none;
-            color: black;
-            font-weight: 50;
-        }
-        .nav-links a:hover{
-            color: blue;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-color:burlywood;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background-color:#df7b7b;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:blue;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.certifications{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.cert-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cert-box h3{
+    margin-top:0;
+}
+
+.cert-box p{
+    margin:6px 0;
+}
+
+.cert-box a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background:#df7b7b;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.cert-box:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+</style>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-        <h3>Portfolio</h3>
-        <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="skills.html">Skills</a>
-        <a href="project.html">Projects</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        </div>
-        </nav>
-    </header>
-    <div>
-        <p>Social Networks -- NPTEL IIT Madras </p>
-        <p>Responsive Web Design -- Free Code Camp certified associate </p>
-        <p>Python -- GUVI, IITM Research Park </p>
-    </div>
+<header>
+<nav class="navbar">
+<h3>Portfolio</h3>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="skills.html">Skills</a>
+<a href="project.html">Projects</a>
+<a href="certifications.html">Certifications</a>
+<a href="resume.html">Resume</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+</div>
+</nav>
+</header>
+<main class="container">
+<h2>My Certifications</h2>
+<div class="certifications">
+
+<div class="cert-box">
+<h3>Logic Building, Programming and Data Structures: Learn How to Think, Program and Apply</h3>
+<p><strong>Provider:</strong> Lovely Professional University (LPU)</p>
+<p>
+Completed a course focused on developing logical thinking,
+problem-solving skills, and understanding core programming
+concepts and data structures.
+</p>
+
+<a href="https://drive.google.com/file/d/1FnZCHjlhB6tauPbZBoT1oG1Kk4RAebe0/view" target="_blank">View Certificate</a>
+
+</div>
+
+<div class="cert-box">
+<h3>Social Networks</h3>
+<p><strong>Provider:</strong> NPTEL – IIT Madras</p>
+<p>
+Completed a course on social network analysis, covering graph theory,
+network structures, and analysis of online social systems.
+</p>
+<a href="https://drive.google.com/file/d/1w6hgdP9IbAOxZQWNXsC-awCyhuT9BdPx/view" target="_blank">View Certificate</a>
+</div>
+
+<div class="cert-box">
+<h3>Responsive Web Design</h3>
+<p><strong>Provider:</strong> FreeCodeCamp</p>
+<p>
+Learned modern web design techniques including HTML5, CSS3,
+Flexbox, Grid, and responsive layouts for multiple devices.
+</p>
+<a href="https://drive.google.com/file/d/1mH_snPs9Q10DRK9W-DU-1VsEqlDWRVUG/view" target="_blank">View Certificate</a>
+</div>
+
+<div class="cert-box">
+<h3>Python Programming</h3>
+<p><strong>Provider:</strong> GUVI – IITM Research Park</p>
+<p>
+Learned Python fundamentals including data structures,
+problem solving, and building real-world applications.
+</p>
+<a href="https://drive.google.com/file/d/1cRnpHE4MYXnD3YsaJ2vdzKZ2RzK-nusD/view" target="_blank">View Certificate</a>
+</div>
+
+</div>
+</main>
 </body>
 </html>
