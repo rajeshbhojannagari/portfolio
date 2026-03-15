@@ -1,79 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-            background-color: burlywood;
-        }
-        .navbar{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            background-color: #df7b7b;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .nav-links{
-            display: flex;
-            gap: 25px;
-        }
-        .nav-links a{
-            text-decoration: none;
-            color: black;
-            font-weight: 50;
-        }
-        .nav-links a:hover{
-            color: blue;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background-color:#df7b7b;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:blue;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-box h3{
+    margin-top:0;
+}
+
+.skill-box ul{
+    padding-left:20px;
+}
+
+.skill-box:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+</style>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-        <h3>Portfolio</h3>
-        <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="skills.html">Skills</a>
-        <a href="project.html">Projects</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        </div>
-        </nav>
-    </header>
-    <div>
-        <h3>Frontend: </h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React JS</li>
-        </ul>
-        <h3>Backend: </h3>
-        <ul>
-            <li>NodeJS</li>
-            <li>Express JS</li>
-            <li>Flask</li>
-            <li>Django</li>
-        </ul>
-        <h3>Database: </h3>
-        <ul>
-            <li>SQL</li>
-            <li>SQLite</li>
-            <li>MongoDB</li>
-        </ul>
-        <h3>Libraries & Framework: </h3>
-        <ul>
-            <li>Tailwind CSS</li>
-            <li>SQLAlchemy</li>
-            <li>OpenCV</li>
-        </ul>
-    </div>
+
+<header>
+<nav class="navbar">
+<h3>Portfolio</h3>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="skills.html">Skills</a>
+<a href="project.html">Projects</a>
+<a href="certifications.html">Certifications</a>
+<a href="resume.html">Resume</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+</div>
+
+</nav>
+</header>
+
+<main class="container">
+
+<h2>My Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-box">
+<h3>Frontend</h3>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>React JS</li>
+</ul>
+</div>
+
+<div class="skill-box">
+<h3>Backend</h3>
+<ul>
+<li>NodeJS</li>
+<li>Express JS</li>
+<li>Flask</li>
+<li>Django</li>
+</ul>
+</div>
+
+<div class="skill-box">
+<h3>Database</h3>
+<ul>
+<li>SQL</li>
+<li>SQLite</li>
+<li>MongoDB</li>
+</ul>
+</div>
+
+<div class="skill-box">
+<h3>Libraries & Frameworks</h3>
+<ul>
+<li>Tailwind CSS</li>
+<li>SQLAlchemy</li>
+<li>OpenCV</li>
+</ul>
+</div>
+
+</div>
+
+</main>
+
 </body>
 </html>
