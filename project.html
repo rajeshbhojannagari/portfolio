@@ -1,62 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-            background-color: burlywood;
-        }
-        .navbar{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            background-color: #df7b7b;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .nav-links{
-            display: flex;
-            gap: 25px;
-        }
-        .nav-links a{
-            text-decoration: none;
-            color: black;
-            font-weight: 50;
-        }
-        .nav-links a:hover{
-            color: blue;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-color:burlywood;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background-color:#df7b7b;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:blue;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.container h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-box h3{
+    margin-top:0;
+}
+
+.project-box ul{
+    padding-left:20px;
+}
+
+.project-box a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background:#df7b7b;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.project-box a:hover{
+    background:#c45f5f;
+}
+
+.project-box:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+</style>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-        <h3>Portfolio</h3>
-        <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="skills.html">Skills</a>
-        <a href="project.html">Projects</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        </div>
-        </nav>
-    </header>
-    <div>
-        <p>Missing Person Identifier: </p>
-        <p>June 2025</p>
-        <a href="https://github.com/rajkiranraj/Missing_person_finder">GitHub</a>
-    </div>
-    <div>
-        <p>Real Time Blood Management System: </p>
-        <p>January-April 2025</p>
-        <a href="https://github.com/rajeshbhojannagari/Full-Stack-Project-blood-management-">GitHub</a>
-    </div>
-    
+
+<header>
+
+<nav class="navbar">
+
+<h3>Portfolio</h3>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="skills.html">Skills</a>
+<a href="project.html">Projects</a>
+<a href="certifications.html">Certifications</a>
+<a href="resume.html">Resume</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+</div>
+
+</nav>
+
+</header>
+
+
+<main class="container">
+
+<h2>My Projects</h2>
+<div class="projects">
+<div class="project-box">
+<h3>Missing Person Identifier using Trees and Hashing</h3>
+<p><strong>Duration:</strong> June – July 2025</p>
+<ul>
+<li>Developed a high-performance system for identifying and matching missing person records.</li>
+<li>Implemented optimized storage and lookup algorithms using hashing and tree-based data structures in C++.</li>
+<li>Built a responsive web interface for searching and managing records.</li>
+<li>Improved search efficiency and scalability when handling large datasets.</li>
+</ul>
+<p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Node.js, C++</p>
+<a href="https://github.com/rajkiranraj/Missing_person_finder">GitHub</a>
+</div>
+
+<div class="project-box">
+<h3>Real Time Blood Management System</h3>
+<p><strong>Duration:</strong> January – April 2025</p>
+<ul>
+<li>Conceptualized and implemented a full-stack blood management system connecting donors, recipients, and blood banks.</li>
+<li>Integrated features such as Donate Blood, Request Blood, and Locate Nearby Blood Banks.</li>
+<li>Developed an admin dashboard and real-time tracking system.</li>
+<li>Improved user experience with responsive design and location-based assistance.</li>
+</ul>
+<p><strong>Tech Stack:</strong> HTML, Tailwind CSS, JavaScript, PHP, MySQL</p>
+<a href="https://github.com/rajeshbhojannagari/Full-Stack-Project-blood-management-">GitHub</a>
+</div>
+</div>
+</main>
 </body>
 </html>
