@@ -6,19 +6,23 @@
 <title>Contact</title>
 
 <style>
+
+/* BODY */
 body{
     margin:0;
     font-family:Arial, sans-serif;
-    background-color:burlywood;
+    background: linear-gradient(135deg, #f5c6aa, #f7a1a1);
 }
 
+/* NAVBAR */
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:15px 50px;
-    background-color:#df7b7b;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .nav-links{
@@ -36,12 +40,21 @@ body{
     color:blue;
 }
 
+/* CONTAINER */
 .container{
     max-width:900px;
     margin:auto;
     padding:40px 20px;
 }
 
+/* HEADING */
+h2{
+    text-align:center;
+    color:#333;
+    margin-bottom:30px;
+}
+
+/* CONTACT BOXES */
 .contact-info{
     display:flex;
     gap:20px;
@@ -50,24 +63,33 @@ body{
 }
 
 .contact-box{
-    background:white;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
     padding:20px;
     border-radius:10px;
     box-shadow:0 4px 8px rgba(0,0,0,0.1);
     flex:1;
+    min-width:200px;
     text-align:center;
+    transition:all 0.3s ease;
+}
+
+.contact-box:hover{
+    transform: translateY(-8px) scale(1.03);
 }
 
 .contact-box a{
     text-decoration:none;
     color:black;
+    font-weight:500;
 }
 
+/* FORM */
 form{
-    background:white;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
     padding:25px;
     border-radius:10px;
     box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    animation:fadeIn 1s ease-in;
 }
 
 form label{
@@ -83,24 +105,44 @@ form input, textarea{
     border:1px solid #ccc;
 }
 
+/* BUTTON */
 button{
-    background:#df7b7b;
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
     color:white;
     border:none;
     padding:10px 20px;
     border-radius:5px;
     cursor:pointer;
+    transition:0.3s;
 }
 
 button:hover{
-    background:#c45f5f;
+    transform:scale(1.05);
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ANIMATION */
+.container{
+    animation:fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 </style>
 </head>
-<body>
-<header>
 
+<body>
+
+<header>
 <nav class="navbar">
 
 <h3>Portfolio</h3>
@@ -116,23 +158,22 @@ button:hover{
 </div>
 
 </nav>
-
 </header>
-
 
 <main class="container">
 
 <h2>Contact Me</h2>
+
 <div class="contact-info">
 
 <div class="contact-box">
 <h4>LinkedIn</h4>
-<a href="https://www.linkedin.com/in/rajesh-bhojannagari-9a4779282/">View Profile</a>
+<a href="https://www.linkedin.com/in/rajesh-bhojannagari-9a4779282/" target="_blank">View Profile</a>
 </div>
 
 <div class="contact-box">
 <h4>GitHub</h4>
-<a href="https://github.com/rajeshbhojannagari">View Projects</a>
+<a href="https://github.com/rajeshbhojannagari" target="_blank">View Projects</a>
 </div>
 
 <div class="contact-box">
@@ -142,7 +183,7 @@ button:hover{
 
 <div class="contact-box">
 <h4>Phone</h4>
-<p>9392897747</p>
+<p>+91-9392897747</p>
 </div>
 
 </div>
