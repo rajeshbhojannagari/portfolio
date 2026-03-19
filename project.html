@@ -7,19 +7,22 @@
 
 <style>
 
+/* BODY */
 body{
     margin:0;
     font-family:Arial, sans-serif;
-    background-color:burlywood;
+    background: linear-gradient(135deg, #f5c6aa, #f7a1a1);
 }
 
+/* NAVBAR */
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:15px 50px;
-    background-color:#df7b7b;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .nav-links{
@@ -37,28 +40,38 @@ body{
     color:blue;
 }
 
+/* CONTAINER */
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
     padding:40px 20px;
 }
 
-.container h2{
+/* HEADING */
+h2{
     text-align:center;
+    color:#333;
     margin-bottom:30px;
 }
 
+/* GRID */
 .projects{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
 }
 
+/* PROJECT CARD */
 .project-box{
-    background:white;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
     padding:20px;
     border-radius:10px;
     box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:all 0.3s ease;
+}
+
+.project-box:hover{
+    transform: translateY(-8px) scale(1.03);
 }
 
 .project-box h3{
@@ -69,23 +82,41 @@ body{
     padding-left:20px;
 }
 
+.project-box p{
+    margin:6px 0;
+}
+
+/* BUTTON */
 .project-box a{
     display:inline-block;
     margin-top:10px;
     padding:8px 15px;
-    background:#df7b7b;
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
     color:white;
     text-decoration:none;
     border-radius:5px;
+    transition:0.3s;
 }
 
 .project-box a:hover{
-    background:#c45f5f;
+    transform:scale(1.05);
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-.project-box:hover{
-    transform:translateY(-5px);
-    transition:0.3s;
+/* ANIMATION */
+.container{
+    animation:fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 </style>
@@ -94,7 +125,6 @@ body{
 <body>
 
 <header>
-
 <nav class="navbar">
 
 <h3>Portfolio</h3>
@@ -110,40 +140,51 @@ body{
 </div>
 
 </nav>
-
 </header>
-
 
 <main class="container">
 
 <h2>My Projects</h2>
+
 <div class="projects">
+
+<!-- PROJECT 1 -->
 <div class="project-box">
 <h3>Missing Person Identifier using Trees and Hashing</h3>
 <p><strong>Duration:</strong> June – July 2025</p>
+
 <ul>
-<li>Developed a high-performance system for identifying and matching missing person records.</li>
-<li>Implemented optimized storage and lookup algorithms using hashing and tree-based data structures in C++.</li>
-<li>Built a responsive web interface for searching and managing records.</li>
-<li>Improved search efficiency and scalability when handling large datasets.</li>
+<li>Developed a high-performance system for identifying missing persons.</li>
+<li>Used hashing and tree-based data structures in C++.</li>
+<li>Built responsive web interface for searching records.</li>
+<li>Optimized search efficiency for large datasets.</li>
 </ul>
+
 <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Node.js, C++</p>
-<a href="https://github.com/rajkiranraj/Missing_person_finder">GitHub</a>
+
+<a href="https://github.com/rajkiranraj/Missing_person_finder" target="_blank">View Project</a>
 </div>
 
+<!-- PROJECT 2 -->
 <div class="project-box">
 <h3>Real Time Blood Management System</h3>
 <p><strong>Duration:</strong> January – April 2025</p>
+
 <ul>
-<li>Conceptualized and implemented a full-stack blood management system connecting donors, recipients, and blood banks.</li>
-<li>Integrated features such as Donate Blood, Request Blood, and Locate Nearby Blood Banks.</li>
-<li>Developed an admin dashboard and real-time tracking system.</li>
-<li>Improved user experience with responsive design and location-based assistance.</li>
+<li>Developed full-stack platform for donors, recipients and blood banks.</li>
+<li>Features include donate, request and locate blood banks.</li>
+<li>Implemented admin dashboard and real-time tracking.</li>
+<li>Improved user experience with responsive design.</li>
 </ul>
+
 <p><strong>Tech Stack:</strong> HTML, Tailwind CSS, JavaScript, PHP, MySQL</p>
-<a href="https://github.com/rajeshbhojannagari/Full-Stack-Project-blood-management-">GitHub</a>
+
+<a href="https://github.com/rajeshbhojannagari/Full-Stack-Project-blood-management-" target="_blank">View Project</a>
 </div>
+
 </div>
+
 </main>
+
 </body>
 </html>
