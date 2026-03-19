@@ -127,7 +127,57 @@ button:hover{
         transform:translateY(0);
     }
 }
+@media (max-width: 768px){
 
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap:10px;
+        margin-top:10px;
+    }
+
+    .container{
+        padding:20px 10px;
+    }
+
+    .skills-grid,
+    .projects,
+    .certifications{
+        grid-template-columns: 1fr;
+    }
+
+    .education-boxes,
+    .activities,
+    .contact-info{
+        flex-direction: column;
+    }
+
+    .main{
+        padding:40px 10px;
+    }
+
+    .profile-pic{
+        width:120px;
+        height:120px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:14px;
+    }
+
+    .progress-bar{
+        font-size:10px;
+    }
+}
 </style>
 </head>
 
