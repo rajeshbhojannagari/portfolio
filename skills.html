@@ -6,19 +6,23 @@
 <title>Skills</title>
 
 <style>
+
+/* BODY */
 body{
     margin:0;
-    font-family: Arial, sans-serif;
-    background-color: burlywood;
+    font-family:Arial, sans-serif;
+    background: linear-gradient(135deg, #f5c6aa, #f7a1a1);
 }
 
+/* NAVBAR */
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:15px 50px;
-    background-color:#df7b7b;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .nav-links{
@@ -36,23 +40,38 @@ body{
     color:blue;
 }
 
+/* CONTAINER */
 .container{
     max-width:1000px;
     margin:auto;
     padding:40px 20px;
 }
 
+/* HEADING */
+h2{
+    text-align:center;
+    color:#333;
+    margin-bottom:30px;
+}
+
+/* GRID */
 .skills-grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
     gap:25px;
 }
 
+/* SKILL BOX */
 .skill-box{
-    background:white;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
     padding:20px;
     border-radius:10px;
     box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:all 0.3s ease;
+}
+
+.skill-box:hover{
+    transform: translateY(-8px) scale(1.03);
 }
 
 .skill-box h3{
@@ -63,9 +82,20 @@ body{
     padding-left:20px;
 }
 
-.skill-box:hover{
-    transform:translateY(-5px);
-    transition:0.3s;
+/* ANIMATION */
+.container{
+    animation:fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 </style>
@@ -75,6 +105,7 @@ body{
 
 <header>
 <nav class="navbar">
+
 <h3>Portfolio</h3>
 
 <div class="nav-links">
@@ -96,6 +127,7 @@ body{
 
 <div class="skills-grid">
 
+<!-- FRONTEND -->
 <div class="skill-box">
 <h3>Frontend</h3>
 <ul>
@@ -106,27 +138,30 @@ body{
 </ul>
 </div>
 
+<!-- BACKEND -->
 <div class="skill-box">
 <h3>Backend</h3>
 <ul>
-<li>NodeJS</li>
-<li>Express JS</li>
+<li>Node.js</li>
+<li>Express.js</li>
 <li>Flask</li>
 <li>Django</li>
 </ul>
 </div>
 
+<!-- DATABASE -->
 <div class="skill-box">
 <h3>Database</h3>
 <ul>
-<li>SQL</li>
+<li>MySQL</li>
 <li>SQLite</li>
 <li>MongoDB</li>
 </ul>
 </div>
 
+<!-- LIBRARIES -->
 <div class="skill-box">
-<h3>Libraries & Frameworks</h3>
+<h3>Libraries & Tools</h3>
 <ul>
 <li>Tailwind CSS</li>
 <li>SQLAlchemy</li>
